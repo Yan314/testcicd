@@ -17,6 +17,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd ${{ secrets.VPS_PATH }}
+            cd /srv
             git clone https://github.com/Yan314/testcicd.git || git pull
             docker compose up -d --build
