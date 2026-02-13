@@ -19,4 +19,5 @@ jobs:
           script: |
             cd /srv
             git clone https://github.com/Yan314/testcicd.git || git pull
+            cd testcicd
             docker compose up -d --build
