@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.send("This is the goulag")
+    res.send("This is the first test for CI/CD pipeline in private repository");
 })
 
 app.get("/api/hello", (req, res) => {
