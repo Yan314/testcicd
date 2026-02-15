@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello World" });
+  res.json({ message: "Hello World, coucou Nath" });
 });
 
 app.listen(3001, () => {
