@@ -1,3 +1,6 @@
-test sur le vps in public 2 : 
+test sur le vps in privé : 
 curl http://localhost:3001/api/hello
 curl http://localhost:3001
+
+le clone fonctionne mais pas le pull pour mettre à jour les changements
+et cela fonctionne en public ! 
