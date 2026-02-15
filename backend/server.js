@@ -6,11 +6,11 @@ const app = express();
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.send("This is the first test with pull in public repository");
+    res.send("This is the first test with pull in public repository with secret key");
 })
 
 app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello World, coucou Nath" });
+  res.json({ message: "Hello World" });
 });
 
 app.listen(3001, () => {

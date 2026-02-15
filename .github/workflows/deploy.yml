@@ -18,11 +18,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd /srv
-            git clone https://github.com/Yan314/testcicd.git || git -C testcicd pull
+            git clone ${{ secrets.VPS_PATH }} || git -C testcicd pull
             cd testcicd
             docker compose up -d --build
-          # script: |
-            # cd /srv
-            # git clone https://github.com/Yan314/testcicd.git || git pull https://github.com/Yan314/testcicd.git
-            # cd testcicd
-            # docker compose up -d --build
+# https://github.com/Yan314/testcicd.git
